@@ -32,7 +32,6 @@ sig16k = extract(data, fs, center_freq=16000, bandwidth=4000)
 sig8k /= np.max(np.abs(sig8k))
 sig16k /= np.max(np.abs(sig16k))
 
-
 ### 提出用データ
 wavfile.write("sig8k.wav", fs, sig8k.astype(np.float32))
 wavfile.write("sig16k.wav", fs, sig16k.astype(np.float32))
