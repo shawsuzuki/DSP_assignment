@@ -41,7 +41,7 @@ t = np.arange(len(sig8k)) / fs
 
 plt.figure(figsize=(12, 6))
 plt.subplot(2,1,1)
-plt.plot(t, sig8k)
+plt.plot(t, sig8k, color = "red")
 plt.title("around 8kHz")
 plt.subplot(2,1,2)
 plt.plot(t, sig16k)
